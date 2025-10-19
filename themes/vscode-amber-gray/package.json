@@ -1,0 +1,44 @@
+{
+  "name": "theme-amber-gray",
+  "displayName": "Amber Gray Theme",
+  "description": "Yet another theme ...",
+  "version": "0.0.1",
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "vscode": "^1.105.0"
+  },
+  "galleryBanner": {
+    "color": "#FFBF00",
+    "theme": "dark"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "keywords": [
+    "VSCode",
+    "Themes",
+    "Dark"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Amber Gray",
+        "uiTheme": "vs-dark",
+        "path": "./themes/amber-gray-color-theme.json"
+      }
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/error-four-o-four/error-four-o-four.config.git"
+  },
+  "scripts": {
+    "cleanup": "node --experimental-transform-types ./scripts/cleanup.ts",
+    "bundle": "vsce package"
+  },
+  "devDependencies": {
+    "@types/node": "^24.8.1",
+    "@vscode/vsce": "^3.6.2"
+  }
+}
